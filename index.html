@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalyze vs TrueVault</title>
+  <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <style>
+    *{
+      font-family: 'DIN' !important;
+      font-weight: 100 !important;
+    }
+    table{
+      font-size: 14px;
+    }
+    th{
+      font-weight: 700 !important;
+      font-size: 20px;
+    }
+    tr td:first-child{
+      font-size: 16px;
+    }
+    strong{
+      font-family: 'DIN' !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+<body>
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center"><strong>HIPAA</strong> Providers Comparison Table</h1>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-xs-10 col-xs-offset-1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="text-center">Catalyze</th>
+            <th class="text-center">TrueVault</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HIPAA Compliance</td>
+            <td><strong>Yes.</strong> Data in transit and data at rest.</td>
+            <td><strong>Yes.</strong> Data in transit and data at rest.</td>
+          </tr>
+          <tr>
+            <td>Database</td>
+            <td><strong>PostgreSQL</strong>/MongoDB/MySQL <i>(Cassandra full support by end of year)</i></td>
+            <td>Proprietary. Modeled after MongoDB an API is offered</td>
+          </tr>
+          <tr>
+            <td>Implementation Help</td>
+            <td>Support is offered.</td>
+            <td>Support is offered.</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>~2250USD</td>
+            <td>~2000USD</td>
+          </tr>
+          <tr>
+            <td>Hosting</td>
+            <td>Yes</td>
+            <td>No (database container only)</td>
+          </tr>
+          <tr>
+            <td>Connection with Elation's API</td>
+            <td>No. We must code it. They do provide a service for a fee called <strong>Redpoint.</strong></td>
+            <td>No. We must code it.</td>
+          </tr>
+          <tr>
+            <td>Connection with actual web application</td>
+            <td>
+              <ul class="list-unstyled">
+                <li><strong>PostgreSQL/MySQL: </strong>Rails battletested ActiveRecord ORM</li>
+                <li><strong>MongoDB: </strong>Rails battletested Mongid ORM</li>
+              </ul>
+            </td>
+            <td>Must code it ourselves.</td>
+          </tr>
+          <tr>
+            <td>Database management</td>
+            <td>Migrations at application level</td>
+            <td>Through TrueVault's beta dashboard</td>
+          </tr>
+          <tr>
+            <td>Database retrieval</td>
+            <td>Database export tool</td>
+            <td>JSON dump?</td>
+          </tr>
+        </tbody>
+      </table>   
+    </div>
+  </div>
+</div>
+</body>
+</html>
